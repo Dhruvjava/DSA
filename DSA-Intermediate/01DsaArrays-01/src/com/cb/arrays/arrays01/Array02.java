@@ -1,5 +1,12 @@
 package com.cb.arrays.arrays01;
 
+/**
+ * find the pairs of i and j which sum should be k
+ * where i & j is not equal
+ *
+ * Asked in Amazon and VmWare
+ */
+
 public class Array02 {
 
     public static void main(String[] args) {
