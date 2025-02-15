@@ -23,10 +23,8 @@ public class Array01 {
         for (int i = 0; i < n; i++) {
             if (max < arr[i]) {
                 max = arr[i];
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            if (arr[i] == max) {
+                count = 1;
+            } else if (max == arr[i]){
                 count++;
             }
         }
