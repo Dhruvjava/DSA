@@ -12,7 +12,7 @@ public class Array02 {
     public static boolean sumOfTwoPairsExists(int[] arr, int k) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = i+1; j < n; j++) {
                 if (i != j && arr[i] + arr[j] == k) {
                     return true;
                 }
