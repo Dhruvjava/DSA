@@ -24,13 +24,18 @@ public class Array03 {
         int start = 0;
         int end = n - 1;
         while (start < end) {
-            a[start] = a[start] + a[end];
-            a[end] = a[start] - a[end];
-            a[start] = a[start] - a[end];
+            swap(a, start, end);
             start++;
             end--;
         }
         return a;
+    }
+
+
+    public static void swap(int[] a, int start, int end) {
+        a[start] = a[start] + a[end];
+        a[end] = a[start] - a[end];
+        a[start] = a[start] - a[end];
     }
 
 }
