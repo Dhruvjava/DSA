@@ -4,8 +4,10 @@ public class Array05 {
 
     public static void main(String[] args) {
         int[] a = new int[] {-2, 3, 1, 4, 6, 2, 8, 7, 9, 3};
-        int k = 3;
-        //        a = reverseArray(a);
+        int k = 12;
+        if (k >= a.length) {
+            k = k % a.length;
+        }
         a = rotateArrayWithK(a, k);
         for (int val : a) {
             System.out.print(val + " ");
